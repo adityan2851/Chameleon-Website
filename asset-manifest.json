@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Chameleon-Website/static/css/main.e43c5cd4.css",
-    "main.js": "/Chameleon-Website/static/js/main.6ab5b76a.js",
+    "main.js": "/Chameleon-Website/static/js/main.ed5d4fae.js",
     "static/css/729.9bad70e5.chunk.css": "/Chameleon-Website/static/css/729.9bad70e5.chunk.css",
     "static/js/729.3ca835e8.chunk.js": "/Chameleon-Website/static/js/729.3ca835e8.chunk.js",
     "static/css/544.0f0f8bf7.chunk.css": "/Chameleon-Website/static/css/544.0f0f8bf7.chunk.css",
@@ -40,7 +40,7 @@
     "static/media/chat-icon.png": "/Chameleon-Website/static/media/chat-icon.59dba5296d04aef6030d.png",
     "index.html": "/Chameleon-Website/index.html",
     "main.e43c5cd4.css.map": "/Chameleon-Website/static/css/main.e43c5cd4.css.map",
-    "main.6ab5b76a.js.map": "/Chameleon-Website/static/js/main.6ab5b76a.js.map",
+    "main.ed5d4fae.js.map": "/Chameleon-Website/static/js/main.ed5d4fae.js.map",
     "729.9bad70e5.chunk.css.map": "/Chameleon-Website/static/css/729.9bad70e5.chunk.css.map",
     "729.3ca835e8.chunk.js.map": "/Chameleon-Website/static/js/729.3ca835e8.chunk.js.map",
     "544.0f0f8bf7.chunk.css.map": "/Chameleon-Website/static/css/544.0f0f8bf7.chunk.css.map",
@@ -62,6 +62,6 @@
   },
   "entrypoints": [
     "static/css/main.e43c5cd4.css",
-    "static/js/main.6ab5b76a.js"
+    "static/js/main.ed5d4fae.js"
   ]
 }
