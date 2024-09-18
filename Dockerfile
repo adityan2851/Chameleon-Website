@@ -1,32 +1,30 @@
-# Step 1: Use Node.js to build the React app
+# Step 1: Build the React app
 FROM node:18-alpine AS build
 
-# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the package.json and install dependencies
+# Copy and install dependencies
 COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy the rest of the application code and build it
+# Copy the app files and build the app
 COPY . .
 RUN npm run build
 
-# Step 2: Use the same Node.js image to serve the app
+# Step 2: Set up the production environment
 FROM node:18-alpine
 
-# Set the working directory for the server
 WORKDIR /app
 
-# Copy the build output and server files to the container
-COPY --from=build /app/build /app/build
-COPY server.js /app
+# Copy the build output and server.js
+COPY --from=build /app/build ./build
+COPY server.js ./
 
-# Install Express (if not already done)
+# Install express in the production container
 RUN npm install express
 
-# Expose the port (default for Express is 3000)
-EXPOSE 3000
+# Expose the correct port
+EXPOSE 8080
 
-# Start the Express server
+# Start the server
 CMD ["node", "server.js"]
